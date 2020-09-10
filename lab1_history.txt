@@ -1,0 +1,115 @@
+   73  whoami
+   74  whoaim
+   75  echo "Hello World"
+   76  echo Hello World
+   77  date
+   78  cal
+   79  man cal
+   80  cal -3
+   81  history
+   82  clear
+   83  pwd
+   84  cd /
+   85  cd ..
+   86  pwd
+   87  ls
+   88  ls /var
+   89  cd ~
+   90  cd ..
+   91  pwd
+   92  ls -l
+   93  cd ~
+   94  mkdir fruits
+   95  cd /
+   96  mkdir ~/animals
+   97  touch /tmp/temp
+   98  cd ~/fruits
+   99  touch apple
+  100  touch banana
+  101  touch pineaple
+  102  touch lion
+  103  touch ~/animals/cat.txt
+  104  touch ~/animals/dog.txt
+  105  touch ~/animals/elefant.txt
+  106  ls -l --time=ctime
+  107  ls b*
+  108  ls a*
+  109  ls [bi]*
+  110  ls b* i*
+  111  cp /etc/passwd ~
+  112  cat /etc/issue
+  113  man cp
+  114  cp /etc/issue apple
+  115  cat apple
+  116  mv lion ~/animals
+  117  mv pineaple pineapple
+  118  ls
+  119  man wc
+  120  wc /etc/passwd -l
+  121  cd ~
+  122   ln -s ln -s /etc/passwd passwd_link
+  123  ln -s /etc/passwd passwd_link
+  124  ln .bash_history history_hard
+  125  ls -l
+  126  ls -l ~/.bash_history
+  127  rm -f fruits/apple
+  128  mkdir rmme
+  129  rmdir rmme
+  130  rmdir fruits
+  131  rm -fr fruits
+  132  cat /etc/passwd /var/log/boot.log
+  133  cp /etc/init.d/ ~
+  134  cp -r /etc/init.d/ ~
+  135  rmdir init.d
+  136  rmdir rm -fr init.d
+  137  rm -fr init.d
+  138  man cut
+  139  history > lab1_history.txt
+  140  history
+  141  man cut
+  142  cut -d: -f1 /etc/passwd | awk '{print $ 1}' | sort
+  143  cut -d: -f1,3 /etc/passwd | awk '{print $ 1}' | sort
+  144  grep :/bin/bash /etc/passwd | wc -l
+  145  grep :/bin/bash /etc/passwd | cut -d: -f1 /etc/passwd | sort -r
+  146  grep "/bin/bash" /etc/passwd | cut -d: -f1,6
+  147  grep "/bin/bash" /etc/passwd | cut -d: -f1,6 | sort -r
+  148  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 | head -n 25
+  149  rpm -ql man-db | xargs -l du    2> /dev/null  | sort -n
+  150  top -b -n1 | sort -k1
+  151  top -b -n1 
+  152  top -b -n1 | sort -k2,2
+  153  top -b -n1 | tail -n+8 | cut -c7-  | tr -s ' ' '\t' | cut -f11,5
+  154  cut -d: -f1 /etc/passwd | sort |tr ":" " "
+  155  cut -d:  /etc/passwd | sort |tr ":" " "
+  156  sort /etc/passwd| tr ":" " "
+  157  sort /etc/passwd -k1,1 | tr ":" " "
+  158  man sort
+  159  sort /etc/passwd -k1,1 -f1,7
+  160  sort /etc/passwd -k1 -f1,7
+  161  sort /etc/passwd -f1,7
+  162  cut -d: -f1,7 | sort -k1
+  163  sudo id
+  164  id
+  165  sudo less /var/log/messages
+  166  ls
+  167  cd ~/var
+  168  cd..
+  169  cd ..
+  170  ls
+  171  cd ..
+  172  ls
+  173  sudo less /var/log/messages
+  174  cd var
+  175  ls
+  176  cd log
+  177  ls
+  178  less cups
+  179  sudio less cups
+  180  sudo less cups
+  181  sudo less tallylog
+  182  less tallylog
+  183  su
+  184  history
+  185  history > lab1_history.txt
+  186  cd ~
+  187  history > lab1_history.txt
