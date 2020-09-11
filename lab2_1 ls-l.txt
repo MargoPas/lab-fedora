@@ -1,0 +1,7 @@
+итого 8
+-rw-rw-r--. 1 rita rita    0 сен 11 15:53 new_file
+-rw-rw-rw-. 1 rita rita    0 сен 11 16:28 lab2_1.txt
+-rw-rw-rw-. 1 rita rita    0 сен 11 16:11 file2
+-rw-------. 1 rita rita    0 сен 11 16:10 file1
+-rw-r-----. 1 root rita    5 сен 11 15:49 file
+drw-rwxr-x. 2 rita rita 4096 сен 11 15:53 dir

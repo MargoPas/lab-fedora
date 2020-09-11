@@ -1,0 +1,90 @@
+    1  sudo dnf install nodejs 
+    2  node -v
+    3  sudo dnf install snapd
+    4  sudo ln -s /var/lib/snapd/snap /snap
+    5  sudo snap install webstorm --classic
+    6  sudo ln -s /var/lib/snapd/snap /snap
+    7  sudo snap install webstorm --classic
+    8  sudo dnf -y update
+    9  sudo reboot
+   10  sudo tee /etc/yum.repos.d/docker-ce.repo<<EOF
+   11  [docker-ce-stable]
+   12  name=Docker CE Stable - \$basearch
+   13  baseurl=https://download.docker.com/linux/fedora/31/\$basearch/stable
+   14  enabled=1
+   15  gpgcheck=1
+   16  gpgkey=https://download.docker.com/linux/fedora/gpg
+   17  EOF
+   18  sudo dnf makecache
+   19  sudo dnf install docker-ce docker-ce-cli containerd.io
+   20  Docker CE Stable - x86_64 
+   21  sudo systemctl enable --now docker
+   22  docker version
+   23  docker pull alpine
+   24  Using default tag: latest
+   25  latest: Pulling from library/alpine
+   26  8e402f1a9c57: Pull complete 
+   27  Digest: sha256:644fcb1a676b5165371437feaa922943aaf7afcfa8bfee4472f6860aad1ef2a0
+   28  Status: Downloaded newer image for alpine:latest
+   29  sudo usermod -aG docker $(whoami)
+   30  newgrp docker
+   31  sudo usermod -aG docker $(whoami)
+   32  newgrp docker
+   33  docker
+   34  docker version
+   35  docker pull alpine
+   36  docker run -it --rm alpine /bin/sh
+   37  sudo usermod -aG docker $(whoami)
+   38  newgrp docker
+   39  node server
+   40  cd
+   41  mkdir test
+   42  cd test
+   43  touch file
+   44  ls l
+   45  ls -l
+   46  chmod ugo-rwx
+   47  chmod ugo-rwx file
+   48  echo "test" >> file
+   49  cat file
+   50  chmod u+W file
+   51  chmod u+w file
+   52  ll
+   53  echo "test" >> file
+   54  cat file
+   55  chmod u+r file
+   56  ls -l
+   57  cat file
+   58  chmod ug+r file
+   59  ls -l
+   60  mkdir dir
+   61  touch new_file
+   62  echo "file 2" >> dir/new_file
+   63  chmod u-x dir/new_file
+   64  cat dir/new_file
+   65  ls -l
+   66  cd dir
+   67  touch new_file
+   68  echo "file 2" >> new_file
+   69  chmod u-x dir
+   70  cd ..
+   71  chmod u-x dir
+   72  cat ~/test/dir/new_file
+   73  rm ~/test/dir/new_file
+   74  chown root file
+   75  chchgrp root file
+   76  chgrp root file
+   77  man umask
+   78  umask 077
+   79  touch file1
+   80  ls -l
+   81  umask 000
+   82  touch file2
+   83  ls -l
+   84  sudo id
+   85  su -
+   86  sudo id
+   87  id
+   88  cat file
+   89  ls -lr >> lab2_1.txt
+   90  history >> lab2_2.txt
