@@ -2,13 +2,13 @@
 #!/bin/bash
 
 echo "Каталоги:"
-ls -ld /dev/*/ $1/.*/
+ls -ld $1/*/ $1/.*/
 echo "Обычные файлы:"
-ls -l /dev| grep ^- 
+ls -l $1| grep ^- 
 echo "Символьные ссылки:"
-ls -l /dev| grep ^l 
+ls -l $1| grep ^l 
 echo "Символьные устройства:"
-ls -l /dev| grep ^c 
+ls -l $1| grep ^c 
 echo "Блочные устройства:"
-ls -l /dev| grep ^b 
+ls -l $1| grep ^b 
 
