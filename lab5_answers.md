@@ -5,10 +5,10 @@
 Потому что `/proc/$$/task` - это задача шелла, а `/proc/self/task` - это задача ls.
 	3) Напишите, какие дескрипторы в выводе команды `ls -l /proc/self/fd` отвечают за `stdin, stdout, stderr`.
 
- ` итого 0`
- ` lrwx------. 1 rita rita 64 дек  4 10:57 0 -> /dev/pts/0 	для ввода`
-`  lrwx------. 1 rita rita 64 дек  4 10:57 1 -> /dev/pts/0	для вывода`
- ` lrwx------. 1 rita rita 64 дек  4 10:57 2 -> /dev/pts/0 	для ошибок`
+ ` итого 0
+   lrwx------. 1 rita rita 64 дек  4 10:57 0 -> /dev/pts/0 	для ввода
+   lrwx------. 1 rita rita 64 дек  4 10:57 1 -> /dev/pts/0	для вывода
+   lrwx------. 1 rita rita 64 дек  4 10:57 2 -> /dev/pts/0 	для ошибок`
 
 	4) Что происходит с дескрипторами при перенаправлении потоков `stdout` и `stderr` в файлы при выполнении команды `ls -l /proc/self/fd > /tmp/ls.out 2> /tmp/ls.err`?
 
